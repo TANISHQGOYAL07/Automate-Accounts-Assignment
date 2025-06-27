@@ -11,7 +11,7 @@ cd Automate-Accounts-Assignment
 
 python3 -m venv venv
 source venv/bin/activate  # For macOS/Linux
-# venv\Scripts\activate   # For Windows
+venv\Scripts\activate   # For Windows
 
 
 3)Install Python Dependencies
@@ -20,10 +20,10 @@ pip install -r requirements.txt
 
 4)Install Tesseract OCR
 
-# For macOS
+For macOS
 brew install tesseract
 
-# For Ubuntu/Linux
+For Ubuntu/Linux
 sudo apt install tesseract-ocr
 
 
