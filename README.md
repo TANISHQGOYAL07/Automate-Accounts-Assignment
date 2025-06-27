@@ -7,6 +7,10 @@
 git clone https://github.com/TANISHQGOYAL07/Automate-Accounts-Assignment.git
 cd Automate-Accounts-Assignment
 
+
+
+
+
 **2)Create and Activate Virtual Environment**
 
 python3 -m venv venv
@@ -14,9 +18,17 @@ source venv/bin/activate  # For macOS/Linux
 venv\Scripts\activate   # For Windows
 
 
+
+
+
+
 **3)Install Python Dependencies**
 
 pip install -r requirements.txt
+
+
+
+
 
 **4)Install Tesseract OCR**
 
@@ -25,6 +37,8 @@ brew install tesseract
 
 For Ubuntu/Linux
 sudo apt install tesseract-ocr
+
+
 
 
 **5) How to Run the Project**
@@ -37,6 +51,9 @@ Once running, open your browser and go to:
 Swagger UI: http://127.0.0.1:8000/docs
 
 API root: http://127.0.0.1:8000
+
+
+
 
 **6) API Endpoints**
 
