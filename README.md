@@ -5,19 +5,19 @@
 ```bash
 git clone https://github.com/your-username/automate-accounts-developer-hiring-assessment.git
 cd automate-accounts-developer-hiring-assessment
-2. Create and Activate Virtual Environment
+### 2. Create and Activate Virtual Environment
 bash
 Copy
 Edit
 python3 -m venv venv
 source venv/bin/activate  # For Mac/Linux
 venv\Scripts\activate     # For Windows
-3. Install Dependencies
+###3. Install Dependencies
 bash
 Copy
 Edit
 pip install -r requirements.txt
-4. Make Sure Tesseract OCR is Installed
+###4. Make Sure Tesseract OCR is Installed
 bash
 Copy
 Edit
