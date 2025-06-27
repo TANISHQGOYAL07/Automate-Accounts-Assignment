@@ -26,8 +26,8 @@ brew install tesseract
 For Ubuntu/Linux
 sudo apt install tesseract-ocr
 
-**
-5) How to Run the Project**
+
+**5) How to Run the Project**
 Start the development server using:
 
 
@@ -39,6 +39,8 @@ Swagger UI: http://127.0.0.1:8000/docs
 API root: http://127.0.0.1:8000
 
 **6) API Endpoints**
+
+
 POST /upload
 Upload a receipt (PDF file only).
 
@@ -65,12 +67,17 @@ Fetch a specific receipt by its unique ID.
 **💾 Database Details**
 All extracted data is saved in a local SQLite database file called receipts.db. You can view or inspect it using tools like DB Browser for SQLite.
 
+
 **🧪 Sample Receipts**
 You can test the OCR by placing scanned PDF receipts inside the year-based folders provided (e.g., 2018/, 2019/, etc.).
 
+
+
 **👤 Author**
 Tanishq Goyal
+
 🔗 GitHub -https://github.com/TANISHQGOYAL07
+
 🔗 LinkedIn - https://www.linkedin.com/in/tanishq-goyal-162975275/
 
 
