@@ -1,86 +1,76 @@
-## 🛠️ Setup & Installation
 
-### 1. Clone the Repository
 
-```bash
-git clone https://github.com/your-username/automate-accounts-developer-hiring-assessment.git
-cd automate-accounts-developer-hiring-assessment
-### 2. Create and Activate Virtual Environment
-bash
-Copy
-Edit
+## 🛠️ Setup & Installation🚀
+
+1)Clone the Repository
+
+git clone https://github.com/TANISHQGOYAL07/Automate-Accounts-Assignment.git
+cd Automate-Accounts-Assignment
+
+2)Create and Activate Virtual Environment
+
 python3 -m venv venv
-source venv/bin/activate  # For Mac/Linux
-venv\Scripts\activate     # For Windows
-###3. Install Dependencies
-bash
-Copy
-Edit
+source venv/bin/activate  # For macOS/Linux
+# venv\Scripts\activate   # For Windows
+
+
+3)Install Python Dependencies
+
 pip install -r requirements.txt
-###4. Make Sure Tesseract OCR is Installed
-bash
-Copy
-Edit
+
+4)Install Tesseract OCR
+
 # For macOS
 brew install tesseract
 
-# For Ubuntu/Debian
+# For Ubuntu/Linux
 sudo apt install tesseract-ocr
-🚀 Run the Project
-Start the FastAPI server using Uvicorn:
 
-bash
-Copy
-Edit
+
+5) How to Run the Project
+Start the development server using:
+
+
 uvicorn app.main:app --reload
-Then open:
+Once running, open your browser and go to:
 
-API Root: http://127.0.0.1:8000
+Swagger UI: http://127.0.0.1:8000/docs
 
-API Docs (Swagger UI): http://127.0.0.1:8000/docs
+API root: http://127.0.0.1:8000
 
-🔌 API Endpoints (with Example Usage)
-📨 POST /upload
-Upload a PDF receipt.
+6) API Endpoints
+POST /upload
+Upload a receipt (PDF file only).
 
-Example (via Swagger or cURL):
+i) POST /validate
+Validate whether a file is a proper PDF.
 
-bash
-Copy
-Edit
-curl -F "file=@sample_receipts/sample1.pdf" http://127.0.0.1:8000/upload
-✅ POST /validate
-Validate whether the uploaded file is a valid PDF.
+Request Body Example:
+{ "file_id": 1 }
 
-Request Body:
+ii) POST /process
+Run OCR on the receipt and extract key data.
 
-json
-Copy
-Edit
-{
-  "file_id": 1
-}
-🧠 POST /process
-Run OCR and extract receipt data.
+Request Body Example:
 
-Request Body:
+{ "file_id": 1 }
 
-json
-Copy
-Edit
-{
-  "file_id": 1
-}
-📃 GET /receipts
-Get all extracted receipts from the database.
+iii) GET /receipts
+List all processed receipts in the database.
 
-🔍 GET /receipts/{id}
-Get details of a single receipt by ID.
+iv) GET /receipts/{id}
+Fetch a specific receipt by its unique ID.
 
-💾 Database
-All data is stored in:
 
-bash
-Copy
-Edit
-receipts.db
+💾 Database Details
+All extracted data is saved in a local SQLite database file called receipts.db. You can view or inspect it using tools like DB Browser for SQLite.
+
+🧪 Sample Receipts
+You can test the OCR by placing scanned PDF receipts inside the year-based folders provided (e.g., 2018/, 2019/, etc.).
+
+👤 Author
+Tanishq Goyal
+🔗 GitHub -https://github.com/TANISHQGOYAL07
+🔗 LinkedIn - https://www.linkedin.com/in/tanishq-goyal-162975275/
+
+
